@@ -1,0 +1,43 @@
+{
+    "hero": {
+        "title": "FIND CLOTHES THAT MATCHES YOUR STYLE",
+        "description": "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+        "international_brands": "200",
+        "high_quality_products": "2000",
+        "happy_customers": "31250",
+        "image": "/assets/images/heroImage.jpg"
+    },
+    "socials": {
+        "twitter": "https://www.twitter.com/",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "github": "https://www.github.com/"
+    },
+    "brands": [
+        {
+            "id": 1,
+            "title": "Versace",
+            "logo": "/assets/icons/versace.svg"
+        },
+        {
+            "id": 2,
+            "title": "Versace",
+            "logo": "/assets/icons/zara.svg"
+        },
+        {
+            "id": 3,
+            "title": "Versace",
+            "logo": "/assets/icons/gucci.svg"
+        },
+        {
+            "id": 4,
+            "title": "Versace",
+            "logo": "/assets/icons/prada.svg"
+        },
+        {
+            "id": 5,
+            "title": "Versace",
+            "logo": "/assets/icons/calvinKlein.svg"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', "sans-serif";
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --black: #000000;     
+  --black-10: #0000001a;
+  --black-20: #00000033;
+  --black-40: #00000066;
+  --black-60: #00000099;
+  
+  --white: #ffffff;     
+  --gray-soft: #f0f0f0; 
+  --gray-light: #f4f4f4;
+  --gray-muted: #e4e4e4;
+  --gray-cream: #F0EEED;
+
+  --yellow-primary: #ffc633;
+  --red-primary: #ff3333;  
+  --red-light: #ff33331a;  
+  --green-primary: #01ab31;
+
+  --blue-primary: #155DFC; 
+}
+

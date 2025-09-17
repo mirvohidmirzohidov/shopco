@@ -1,0 +1,134 @@
+.category_container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--black-60);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.breadcrumb a svg {
+    margin-top: 3px;
+}
+
+.breadcrumb span {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.filter {
+    width: 295px;
+    height: fit-content;
+    border: 1px solid var(--black-10);
+    border-radius: 20px;
+    padding: 20px 24px;
+}
+
+.filter h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.filter_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+.filter_top svg {
+    font-size: 24px;
+
+    path {
+        fill: var(--black-40);
+    }
+}
+
+.filter_item {
+    padding: 24px 0;
+    border-top: 1px solid var(--black-10);
+}
+
+.filter_item h4 {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 24px;
+}
+
+.categories label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.price_range {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--black-10);
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sizes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 62px;
+    background-color: var(--gray-soft);
+    cursor: pointer;
+}
+
+.sizes button.active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.apply_button {
+    width: 100%;
+    height: 48px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}

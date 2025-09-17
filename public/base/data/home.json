@@ -1,0 +1,13 @@
+{
+  "staistic": {
+    "brands": 268,
+    "products": 2150,
+    "customers": 31256
+  },
+  "socials": {
+    "twitter": "https://www.twitter.com/",
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "github": "https://www.github.com/"
+  }
+}

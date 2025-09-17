@@ -1,0 +1,297 @@
+[
+  {
+    "sizes": ["Small", "Medium", "Large", "X-Large"],
+    "brends": ["VERSACE", "ZARA", "GUCCI", "PRADA", "Celvin Klein"],
+    "types": {
+      "T-shirts": {
+        "men": [
+          "Short sleeve T-shirt",
+          "Long sleeve T-shirt",
+          "V-neck T-shirt",
+          "Polo T-shirt",
+          "Oversized T-shirt"
+        ],
+        "women": [
+          "Crop top T-shirt",
+          "Fitted T-shirt",
+          "Off-shoulder T-shirt",
+          "Longline T-shirt",
+          "Printed T-shirt"
+        ],
+        "neutral": [
+          "Basic cotton T-shirt",
+          "Sport T-shirt",
+          "Graphic T-shirt",
+          "Plain T-shirt",
+          "Unisex oversized T-shirt"
+        ]
+      },
+      "Shirts": {
+        "men": [
+          "Formal shirt",
+          "Casual shirt",
+          "Denim shirt",
+          "Checkered shirt",
+          "Linen shirt"
+        ],
+        "women": [
+          "Blouse",
+          "Silk shirt",
+          "Tunic shirt",
+          "Button-up shirt",
+          "Chiffon shirt"
+        ],
+        "neutral": [
+          "Overshirt",
+          "Oxford shirt",
+          "Unisex flannel shirt",
+          "Loose-fit shirt",
+          "Mandarin collar shirt"
+        ]
+      },
+      "Shorts": {
+        "men": [
+          "Cargo shorts",
+          "Denim shorts",
+          "Sport shorts",
+          "Chino shorts",
+          "Swim shorts"
+        ],
+        "women": [
+          "High-waist shorts",
+          "Denim cut-off shorts",
+          "Bermuda shorts",
+          "Pleated shorts",
+          "Cycling shorts"
+        ],
+        "neutral": [
+          "Basic shorts",
+          "Running shorts",
+          "Cotton shorts",
+          "Lounge shorts",
+          "Unisex Bermuda shorts"
+        ]
+      },
+      "Jeans": {
+        "men": [
+          "Straight jeans",
+          "Slim fit jeans",
+          "Regular jeans",
+          "Bootcut jeans",
+          "Baggy jeans"
+        ],
+        "women": [
+          "Skinny jeans",
+          "Mom jeans",
+          "High-waist jeans",
+          "Flared jeans",
+          "Ripped jeans"
+        ],
+        "neutral": [
+          "Relaxed fit jeans",
+          "Loose jeans",
+          "Boyfriend jeans",
+          "Basic denim",
+          "Cropped jeans"
+        ]
+      },
+      "Pants": {
+        "men": [
+          "Chinos",
+          "Dress pants",
+          "Cargo pants",
+          "Joggers",
+          "Corduroy pants"
+        ],
+        "women": [
+          "Palazzo pants",
+          "Leggings",
+          "High-waist trousers",
+          "Culottes",
+          "Yoga pants"
+        ],
+        "neutral": [
+          "Sweatpants",
+          "Wide-leg pants",
+          "Casual cotton pants",
+          "Stretch pants",
+          "Work pants"
+        ]
+      },
+      "Hoodies": {
+        "men": [
+          "Pullover hoodie",
+          "Zip-up hoodie",
+          "Oversized hoodie",
+          "Sport hoodie",
+          "Basic hoodie"
+        ],
+        "women": [
+          "Cropped hoodie",
+          "Fitted hoodie",
+          "Longline hoodie",
+          "Casual hoodie",
+          "Knitted hoodie"
+        ],
+        "neutral": [
+          "Unisex hoodie",
+          "Oversized hoodie",
+          "Plain hoodie",
+          "Graphic hoodie",
+          "Zipper hoodie"
+        ]
+      },
+      "Jackets": {
+        "men": [
+          "Leather jacket",
+          "Bomber jacket",
+          "Denim jacket",
+          "Windbreaker",
+          "Parka"
+        ],
+        "women": [
+          "Blazer",
+          "Cropped jacket",
+          "Trench coat",
+          "Denim jacket",
+          "Faux fur jacket"
+        ],
+        "neutral": [
+          "Rain jacket",
+          "Puffer jacket",
+          "Varsity jacket",
+          "Lightweight jacket",
+          "Utility jacket"
+        ]
+      },
+      "Coats": {
+        "men": [
+          "Overcoat",
+          "Peacoat",
+          "Wool coat",
+          "Trench coat",
+          "Military coat"
+        ],
+        "women": [
+          "Long coat",
+          "Cape coat",
+          "Wrap coat",
+          "Belted coat",
+          "Faux fur coat"
+        ],
+        "neutral": [
+          "Parka coat",
+          "Down coat",
+          "Hooded coat",
+          "Quilted coat",
+          "Casual coat"
+        ]
+      },
+      "Dresses": {
+        "men": [],
+        "women": [
+          "Maxi dress",
+          "Midi dress",
+          "Mini dress",
+          "Cocktail dress",
+          "Evening gown",
+          "Summer dress",
+          "Wrap dress"
+        ],
+        "neutral": []
+      },
+      "Skirts": {
+        "men": [],
+        "women": [
+          "Mini skirt",
+          "Midi skirt",
+          "Maxi skirt",
+          "Pencil skirt",
+          "Pleated skirt",
+          "A-line skirt",
+          "Tulle skirt"
+        ],
+        "neutral": []
+      },
+      "Underwear": {
+        "men": [
+          "Boxers",
+          "Briefs",
+          "Trunks",
+          "Thermal underwear",
+          "Undershirt"
+        ],
+        "women": ["Bra", "Panties", "Thong", "Sports bra", "Bralette"],
+        "neutral": [
+          "Base layer",
+          "Thermal set",
+          "Cotton undershirt",
+          "Seamless underwear"
+        ]
+      },
+      "Socks": {
+        "men": ["Ankle socks", "Crew socks", "Dress socks", "Sports socks"],
+        "women": [
+          "Stockings",
+          "Knee-high socks",
+          "Sheer socks",
+          "Patterned socks"
+        ],
+        "neutral": [
+          "Basic cotton socks",
+          "No-show socks",
+          "Wool socks",
+          "Compression socks"
+        ]
+      },
+      "Shoes": {
+        "men": ["Dress shoes", "Sneakers", "Loafers", "Boots", "Sandals"],
+        "women": ["Heels", "Flats", "Wedges", "Ankle boots", "Ballet flats"],
+        "neutral": [
+          "Trainers",
+          "Slippers",
+          "Clogs",
+          "Flip-flops",
+          "Running shoes"
+        ]
+      },
+      "Hats": {
+        "men": ["Baseball cap", "Fedora", "Flat cap", "Beanie", "Cowboy hat"],
+        "women": [
+          "Wide-brim hat",
+          "Beret",
+          "Sun hat",
+          "Cloche hat",
+          "Headband"
+        ],
+        "neutral": [
+          "Bucket hat",
+          "Snapback cap",
+          "Wool hat",
+          "Visor cap",
+          "Knitted beanie"
+        ]
+      },
+      "Traditional": {
+        "men": ["Chapan", "Yaktak", "Tubeteika", "Loose trousers"],
+        "women": ["Atlas dress", "Traditional skirt", "Uzbek scarf", "Kofta"],
+        "neutral": ["National shawls", "Tubeteika", "Turban", "Robes"]
+      },
+      "Sportswear": {
+        "men": [
+          "Track suit",
+          "Running shorts",
+          "Training T-shirt",
+          "Sport sneakers"
+        ],
+        "women": ["Yoga leggings", "Sports bra", "Running tank", "Sport skirt"],
+        "neutral": ["Gym set", "Training hoodie", "Jogger set", "Activewear"]
+      },
+      "Accessories": {
+        "men": ["Belt", "Watch", "Tie", "Wallet"],
+        "women": ["Handbag", "Scarf", "Jewelry", "Hairband"],
+        "neutral": ["Backpack", "Cap", "Sunglasses", "Gloves"]
+      }
+    }
+  }
+]

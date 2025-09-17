@@ -1,0 +1,251 @@
+[
+    {
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 120,
+        "category": "T-shirts",
+        "gender": "men",
+        "img": [
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+        ],
+        "filter": {
+            "colors": [
+                "#4F4631",
+                "#314F4A",
+                "#31344F"
+            ],
+            "sizes": [
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large"
+            ]
+        },
+        "isNewArrival": true,
+        "isTopSelling": true,
+        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+        "rating": {
+            "rate": 4.5
+        },
+        "comments": [
+            {
+                "id": 1,
+                "user:": "Samantha D",
+                "createdAt": "2023-08-14T00:00:00.000Z",
+                "text": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "T-SHIRT WITH TAPE DETAILS",
+        "category": "T-shirts",
+        "gender": "men",
+        "price": 96,
+        "oldPrice": 120,
+        "discount": 20,
+        "img": [
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+        ],
+        "filter": {
+            "colors": [
+                "#4F4631",
+                "#314F4A",
+                "#31344F"
+            ],
+            "sizes": [
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large"
+            ]
+        },
+        "isNewArrival": true,
+        "isTopSelling": true,
+        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+        "rating": {
+            "rate": 4.5,
+            "count": 120
+        },
+        "comments": [
+            {
+                "id": 1,
+                "user": "Samantha D",
+                "createdAt": "2023-08-14T00:00:00.000Z",
+                "text": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+                "rating": 5
+            },
+            {
+                "id": 2,
+                "user": "Michael B",
+                "createdAt": "2023-09-01T00:00:00.000Z",
+                "text": "The quality is really good for the price. I’ve washed it a couple of times already and the color hasn’t faded.",
+                "rating": 4
+            },
+            {
+                "id": 3,
+                "user": "Emily R",
+                "createdAt": "2023-10-10T00:00:00.000Z",
+                "text": "The size runs a little smaller than expected. I recommend ordering one size up for a better fit.",
+                "rating": 3
+            },
+            {
+                "id": 4,
+                "user": "James K",
+                "createdAt": "2023-11-22T00:00:00.000Z",
+                "text": "Great product overall! The fabric is soft and breathable. Perfect for summer wear.",
+                "rating": 5
+            },
+            {
+                "id": 5,
+                "user": "Olivia M",
+                "createdAt": "2023-12-05T00:00:00.000Z",
+                "text": "The shipping was super fast, and the packaging was neat. I’m really satisfied with this purchase.",
+                "rating": 4
+            },
+            {
+                "id": 6,
+                "user": "James K",
+                "createdAt": "2023-11-22T00:00:00.000Z",
+                "text": "Great product overall! The fabric is soft and breathable. Perfect for summer wear.",
+                "rating": 5
+            },
+            {
+                "id": 7,
+                "user": "Olivia M",
+                "createdAt": "2023-12-05T00:00:00.000Z",
+                "text": "The shipping was super fast, and the packaging was neat. I’m really satisfied with this purchase.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Mens Cotton Jacket",
+        "category": "T-shirts",
+        "gender": "men",
+        "price": 96,
+        "oldPrice": 120,
+        "discount": 20,
+        "img": [
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png"
+        ],
+        "filter": {
+            "colors": [
+                "#4F4631",
+                "#314F4A",
+                "#31344F"
+            ],
+            "sizes": [
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large"
+            ]
+        },
+        "isNewArrival": true,
+        "isTopSelling": true,
+        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+        "rating": {
+            "rate": 4.5,
+            "count": 120
+        },
+        "comments": [
+            {
+                "id": 1,
+                "user:": "Samantha D",
+                "createdAt": "2023-08-14T00:00:00.000Z",
+                "text": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Mens Casual Slim Fit",
+        "category": "T-shirts",
+        "gender": "men",
+        "price": 96,
+        "oldPrice": 120,
+        "discount": 20,
+        "img": [
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+        ],
+        "filter": {
+            "colors": [
+                "#4F4631",
+                "#314F4A",
+                "#31344F"
+            ],
+            "sizes": [
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large"
+            ]
+        },
+        "isNewArrival": true,
+        "isTopSelling": false,
+        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+        "rating": {
+            "rate": 4.5,
+            "count": 120
+        },
+        "comments": [
+            {
+                "id": 1,
+                "user:": "Samantha D",
+                "createdAt": "2023-08-14T00:00:00.000Z",
+                "text": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+        "category": "T-shirts",
+        "price": 96,
+        "oldPrice": 120,
+        "discount": 20,
+        "img": [
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+        ],
+        "filter": {
+            "colors": [
+                "#4F4631",
+                "#314F4A",
+                "#31344F"
+            ],
+            "sizes": [
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large"
+            ]
+        },
+        "isNewArrival": true,
+        "isTopSelling": false,
+        "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+        "rating": {
+            "rate": 4.5,
+            "count": 120
+        },
+        "comments": [
+            {
+                "id": 1,
+                "user:": "Samantha D",
+                "createdAt": "2023-08-14T00:00:00.000Z",
+                "text": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            }
+        ]
+    }
+]

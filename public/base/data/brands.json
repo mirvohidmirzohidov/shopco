@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "VERSACE",
+    "logo": "/base/brands/versace.svg"
+  },
+  {
+    "id": 2,
+    "name": "ZARA",
+    "logo": "/base/brands/zara.svg"
+  },
+  {
+    "id": 3,
+    "name": "GUCCI",
+    "logo": "/base/brands/gucci.svg"
+  },
+  {
+    "id": 4,
+    "name": "PRADA",
+    "logo": "/base/brands/prada.svg"
+  },
+  {
+    "id": 5,
+    "name": "Celvin Klein",
+    "logo": "/base/brands/calvin-klein.svg"
+  }
+]
