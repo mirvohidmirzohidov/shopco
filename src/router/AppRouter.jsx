@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom"
-import MainLayout from "../Layouts/MainLayout"
+import MainLayout from "../layouts/MainLayout"
 import Home from "../pages/Home/Home"
 import ProductDetail from "../pages/ProductDetail/ProductDetail"
 import ProductModal from "../pages/ProductDetail/ProductModal"
