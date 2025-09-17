@@ -3,7 +3,6 @@ import MainLayout from "../Layouts/MainLayout"
 import Home from "../pages/Home/Home"
 import ProductDetail from "../pages/ProductDetail/ProductDetail"
 import ProductModal from "../pages/ProductDetail/ProductModal"
-import { useEffect } from "react"
 import Category from "../pages/Category/Category"
 import Cart from "../pages/Cart/Cart"
 
