@@ -87,64 +87,72 @@ const Cart = () => {
                 <Link to={"/"}>Home <MdArrowForwardIos /></Link>
                 <span>Cart</span>
             </div>
-            <h1 className={styles.title}>YOUR CART</h1>
-            <div className={styles.cart_content}>
-                <div className={styles.cards}>
-                    {
-                        products.map(product => (
-                            <div key={product.id} className={styles.card}>
-                                <div className={styles.card_left}>
-                                    <div className={styles.img_wrapper}>
-                                        <img src={product.img?.[0]} alt={product.title} />
-                                    </div>
-                                    <div>
-                                        <h4>{product.title}</h4>
-                                        <p className={styles.size}>size: <span>Large</span></p>
-                                        <p className={styles.price}>${product.price * product.quantity}</p>
-                                    </div>
-                                </div>
-                                <div className={styles.card_right}>
-                                    <HiTrash onClick={() => deleteFromCart(product.id)} />
-                                    <div className={styles.buttons}>
-                                        <button onClick={() => handleDecrement(product.id)}>-</button>
-                                        <span>{product.quantity}</span>
-                                        <button onClick={() => handleIncrement(product.id)}>+</button>
-                                    </div>
-                                </div>
+            {
+                products.length ? (
+                    <>
+                        <h1 className={styles.title}>YOUR CART</h1>
+                        <div className={styles.cart_content}>
+                            <div className={styles.cards}>
+                                {
+                                    products.map(product => (
+                                        <div key={product.id} className={styles.card}>
+                                            <div className={styles.card_left}>
+                                                <div className={styles.img_wrapper}>
+                                                    <img src={product.img?.[0]} alt={product.title} />
+                                                </div>
+                                                <div>
+                                                    <h4>{product.title}</h4>
+                                                    <p className={styles.size}>size: <span>Large</span></p>
+                                                    <p className={styles.price}>${product.price * product.quantity}</p>
+                                                </div>
+                                            </div>
+                                            <div className={styles.card_right}>
+                                                <HiTrash onClick={() => deleteFromCart(product.id)} />
+                                                <div className={styles.buttons}>
+                                                    <button onClick={() => handleDecrement(product.id)}>-</button>
+                                                    <span>{product.quantity}</span>
+                                                    <button onClick={() => handleIncrement(product.id)}>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
-                        ))
-                    }
-                </div>
-                <div className={styles.order_summary}>
-                    <h3>Order Summary</h3>
-                    <div className={styles.calculations}>
-                        <div className={styles.calculation_item}>
-                            <p>Subtotal</p>
-                            <span>{sortedPrice(total)}</span>
+                            <div className={styles.order_summary}>
+                                <h3>Order Summary</h3>
+                                <div className={styles.calculations}>
+                                    <div className={styles.calculation_item}>
+                                        <p>Subtotal</p>
+                                        <span>{sortedPrice(total)}</span>
+                                    </div>
+                                    <div className={styles.calculation_item}>
+                                        <p>Discount ({discount}%)</p>
+                                        <span className={styles.discount}>-{sortedPrice((total * discount) / 100)}</span>
+                                    </div>
+                                    <div className={styles.calculation_item}>
+                                        <p>Delivery Fee</p>
+                                        <span>$15</span>
+                                    </div>
+                                    <div className={`${styles.calculation_item} ${styles.total}`}>
+                                        <p>Total</p>
+                                        <span>{sortedPrice(total - ((total * discount) / 100) + 15)}</span>
+                                    </div>
+                                </div>
+                                <form onSubmit={discountCalculation}>
+                                    <div className={styles.input_wrapper}>
+                                        <MdOutlineDiscount />
+                                        <input type="text" placeholder="Add promo code" name="promo" />
+                                    </div>
+                                    <button type="submit">Apply</button>
+                                </form>
+                                <button className={styles.checkout_button}>Go to Checkout <FaArrowRight /></button>
+                            </div>
                         </div>
-                        <div className={styles.calculation_item}>
-                            <p>Discount ({discount}%)</p>
-                            <span className={styles.discount}>-{sortedPrice((total * discount) / 100)}</span>
-                        </div>
-                        <div className={styles.calculation_item}>
-                            <p>Delivery Fee</p>
-                            <span>$15</span>
-                        </div>
-                        <div className={`${styles.calculation_item} ${styles.total}`}>
-                            <p>Total</p>
-                            <span>{sortedPrice(total - ((total * discount) / 100) + 15)}</span>
-                        </div>
-                    </div>
-                    <form onSubmit={discountCalculation}>
-                        <div className={styles.input_wrapper}>
-                            <MdOutlineDiscount />
-                            <input type="text" placeholder="Add promo code" name="promo" />
-                        </div>
-                        <button type="submit">Apply</button>
-                    </form>
-                    <button className={styles.checkout_button}>Go to Checkout <FaArrowRight /></button>
-                </div>
-            </div>
+                    </>
+                ) : (
+                    <h1 className={styles.title}>YOUR CART IS EMPTY</h1>
+                )
+            }
         </div>
     )
 }

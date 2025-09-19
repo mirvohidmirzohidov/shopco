@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import styles from "./Navbar.module.css"
 
@@ -7,11 +7,14 @@ import { PiShoppingCartSimpleBold } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { IoMdLogIn } from "react-icons/io";
 
 const Navbar = ({ showBanner, setShowBanner }) => {
     const [openMenu, setOpenMenu] = useState(false)
     const [openDropdown, setOpenDropdown] = useState(false)
     const location = useLocation()
+    const navigate = useNavigate()
+    const token = localStorage.getItem("token")
 
     const dropdownLInks = [
         {
@@ -52,12 +55,27 @@ const Navbar = ({ showBanner, setShowBanner }) => {
         }
     }, [openMenu]);
 
+    const handleClick = (id) => {
+        if (location.pathname === "/") {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+                navigate(`#${id}`, { replace: false });
+            }
+        } else {
+            navigate(`/#${id}`);
+        }
+    };
+
     return (
         <div className={styles.wrapper}>
-            <div className={`${styles.topBanner} ${!showBanner ? styles.hide_banner : ""}`}>
-                <p>Sign up and get 20% off to your first order. <Link to={"/register"}>Sign Up Now</Link></p>
-                <button onClick={() => setShowBanner(false)}>✕</button>
-            </div>
+            {
+                !token && <div className={`${styles.topBanner} ${!showBanner ? styles.hide_banner : ""}`}>
+                    <p>Sign up and get 20% off to your first order. <Link to={"/register"}>Sign Up Now</Link></p>
+                    <button onClick={() => setShowBanner(false)}>✕</button>
+                </div>
+            }
             <div className={`${styles.navbarWrapper} ${openMenu && window.innerWidth <= 1080 ? styles.navbar_open : ""}`}>
                 <div style={{ borderBottom: location.pathname !== "/" ? "1px solid var(--black-10)" : "" }} className={styles.navbar}>
                     <div className={styles.logoWrapper}>
@@ -78,8 +96,8 @@ const Navbar = ({ showBanner, setShowBanner }) => {
                             <p>Shop <MdOutlineKeyboardArrowDown /></p>
                         </div>
                         <Link to={"/"}>On Sale</Link>
-                        <Link to={"/"}>New Arrivals</Link>
-                        <Link to={"/"}>Brands</Link>
+                        <Link to={"/"} onClick={() => handleClick("newArrivals")}>New Arrivals</Link>
+                        <Link to={"/"} onClick={() => handleClick("brands")}>Brands</Link>
                     </div>
                     <div className={styles.inputWrapper}>
                         <IoSearch />
@@ -88,7 +106,9 @@ const Navbar = ({ showBanner, setShowBanner }) => {
                     <div className={styles.icons}>
                         <div><IoSearch /></div>
                         <Link to={"/cart"}><PiShoppingCartSimpleBold /></Link>
-                        <Link to={"/profile"}><CgProfile /></Link>
+                        {
+                            localStorage.getItem("token") ? <Link to={"/profile"}><CgProfile /></Link> : <Link to={"/login"}><IoMdLogIn /></Link>
+                        }
                     </div>
                 </div>
                 <div style={{ display: openMenu ? "flex" : "none" }} className={`${styles.links} ${styles.menu_links}`} onClick={(e) => {

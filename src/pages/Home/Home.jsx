@@ -100,7 +100,7 @@ const Home = () => {
         </div>
 
         <div className={styles.brands_wrapper}>
-          <div className={styles.brands}>
+          <div className={styles.brands} id="brands">
             {
               data?.brands?.map(item => (
                 <img key={item.id} src={item.logo} alt={`${item.title} logo`} />
@@ -109,7 +109,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`${styles.newArrivals} ${styles.products_section}`}>
+        <div id="newArrivals" className={`${styles.newArrivals} ${styles.products_section}`}>
           <h1 className={styles.main_title}>NEW ARRIVALS</h1>
           <div className={styles.cards}>
             {

@@ -60,11 +60,11 @@ const ProductDetail = () => {
     }
     fetchRelatedProducts()
 
-    if (product?.filter?.colors) {
-      setSelectedColor(product.filter.colors[0])
+    if (product?.colors) {
+      setSelectedColor(product.colors[0])
     }
-    if (product?.filter?.sizes) {
-      setSelectedSize(product.filter.sizes[0])
+    if (product?.sizes) {
+      setSelectedSize(product.sizes[0])
     }
   }, [product])
 
@@ -156,7 +156,7 @@ const ProductDetail = () => {
             <p>Select Colors</p>
             <div className={styles.colors}>
               {
-                product?.filter?.colors.map((color, index) => (
+                product?.colors?.map((color, index) => (
                   <label key={index} className={styles.color_circle}>
                     <input onChange={() => setSelectedColor(color)} checked={selectedColor === color} type="radio" name="color" value={color} />
                     <span style={{ backgroundColor: color }}></span>
@@ -169,7 +169,7 @@ const ProductDetail = () => {
             <p>Select Colors</p>
             <div className={styles.sizes}>
               {
-                product?.filter?.sizes.map((size, index) => (
+                product?.sizes?.map((size, index) => (
                   <button onClick={() => setSelectedSize(size)} className={selectedSize === size ? styles.active_size : ""} key={index}>
                     {size}
                   </button>
