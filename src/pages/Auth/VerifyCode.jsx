@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import styles from "./Auth.module.css";
 import { ENDPOINTS } from "../../constants/endpoints";
+import { Helmet } from "react-helmet-async";
 
 export default function VerifyCode() {
   const [code, setCode] = useState(["", "", "", ""]);
@@ -74,6 +75,9 @@ export default function VerifyCode() {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Verify Code</title>
+      </Helmet>
       <h2 className={styles.title}>Enter SMS Code</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.codeInputs}>

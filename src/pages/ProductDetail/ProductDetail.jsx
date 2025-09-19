@@ -8,6 +8,7 @@ import ProductTabs from "./ProductTabs";
 import styles from "./ProductDetail.module.css"
 import api from "../../services/api";
 import { ENDPOINTS } from "../../constants/endpoints";
+import { Helmet } from "react-helmet-async";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({})
@@ -99,6 +100,9 @@ const ProductDetail = () => {
 
   return (
     <div className={styles.product_detail_wrapper}>
+      <Helmet>
+        <title>{product.title}</title>
+      </Helmet>
       <div className={styles.breadcrumb}>
         <Link to="/">Home</Link>
         {

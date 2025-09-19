@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Satoshi', "sans-serif";
+  user-select: none;
 }
 
 @font-face {
@@ -13,24 +14,23 @@
 }
 
 :root {
-  --black: #000000;     
+  --black: #000000;
   --black-6: #0000000F;
   --black-10: #0000001a;
   --black-20: #00000033;
   --black-40: #00000066;
   --black-60: #00000099;
-  
-  --white: #ffffff;     
-  --gray-soft: #f0f0f0; 
+
+  --white: #ffffff;
+  --gray-soft: #f0f0f0;
   --gray-light: #f4f4f4;
   --gray-muted: #e4e4e4;
   --gray-cream: #F0EEED;
 
   --yellow-primary: #ffc633;
-  --red-primary: #ff3333;  
-  --red-light: #ff33331a;  
+  --red-primary: #ff3333;
+  --red-light: #ff33331a;
   --green-primary: #01ab31;
 
-  --blue-primary: #155DFC; 
+  --blue-primary: #155DFC;
 }
-

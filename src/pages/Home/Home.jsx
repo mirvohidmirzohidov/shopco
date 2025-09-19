@@ -66,7 +66,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home - E-Commerce</title>
+        <title>Home - Shop co</title>
         <meta name="description" content="Welcome to ShopCo - the best online shop for T-shirts, jeans and more." />
       </Helmet>
       <div className={styles.home}>

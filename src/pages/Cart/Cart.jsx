@@ -6,6 +6,7 @@ import api from "../../services/api";
 import styles from "./Cart.module.css"
 import { ENDPOINTS } from "../../constants/endpoints";
 import { FaArrowRight } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Cart = () => {
     const [products, setProducts] = useState([])
@@ -83,6 +84,9 @@ const Cart = () => {
 
     return (
         <div className={styles.cart_container}>
+            <Helmet>
+                <title>Cart</title>
+            </Helmet>
             <div className={styles.breadcrumb}>
                 <Link to={"/"}>Home <MdArrowForwardIos /></Link>
                 <span>Cart</span>

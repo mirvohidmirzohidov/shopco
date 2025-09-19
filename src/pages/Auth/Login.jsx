@@ -5,6 +5,7 @@ import "react-international-phone/style.css";
 import api from "../../services/api";
 import { ENDPOINTS } from "../../constants/endpoints";
 import styles from "./Auth.module.css";
+import { Helmet } from "react-helmet-async";
 
 export default function Login() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -23,14 +24,19 @@ export default function Login() {
 
     setLoading(true);
     try {
+      localStorage.setItem("pendingPhone", phoneNumber);
+      navigate("/verify");
+
       const res = await api.post(ENDPOINTS.LOGIN, {
         phone: phoneNumber,
       });
 
       console.log("Login response:", res.data);
 
-      localStorage.setItem("pendingPhone", phoneNumber);
-      navigate("/verify");
+      if (res.success) {
+        localStorage.setItem("pendingPhone", phoneNumber);
+        navigate("/verify");
+      }
     } catch (err) {
       console.error("Login error:", err);
       setError("Login failed. Try again.");
@@ -41,6 +47,9 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Log In</title>
+      </Helmet>
       <h2 className={styles.title}>LOG IN</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <PhoneInput

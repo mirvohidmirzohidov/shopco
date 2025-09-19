@@ -5,6 +5,7 @@ import "react-international-phone/style.css";
 import api from "../../services/api";
 import { ENDPOINTS } from "../../constants/endpoints";
 import styles from "./Auth.module.css";
+import { Helmet } from "react-helmet-async";
 
 export default function Register() {
   const [fullName, setFullName] = useState("");
@@ -31,6 +32,9 @@ export default function Register() {
     setLoading(true);
 
     try {
+      localStorage.setItem("pendingPhone", phoneNumber);
+      navigate("/verify");
+
       const res = await api.post(ENDPOINTS.REGISTER, {
         name: fullName,
         phone: phoneNumber,
@@ -38,11 +42,12 @@ export default function Register() {
 
       console.log("Register response:", res.data);
 
-      localStorage.setItem("pendingPhone", phoneNumber);
-      navigate("/verify");
+      if (res.success) {
+        localStorage.setItem("pendingPhone", phoneNumber);
+        navigate("/verify");
+      }
     } catch (err) {
       console.error("Register error:", err);
-      alert("Registration failed, try again later.");
     } finally {
       setLoading(false);
     }
@@ -50,6 +55,9 @@ export default function Register() {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Sign Up</title>
+      </Helmet>
       <h2 className={styles.title}>SIGN UP</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input

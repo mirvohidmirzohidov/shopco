@@ -8,6 +8,7 @@ import api from "../../services/api"
 import { ENDPOINTS } from "../../constants/endpoints"
 import Pagination from "./Pagination"
 import styles from "./Category.module.css"
+import { Helmet } from "react-helmet-async"
 
 const Category = () => {
   const [categories, setCategories] = useState([])
@@ -77,6 +78,9 @@ const Category = () => {
 
   return (
     <div className={styles.category_container}>
+      <Helmet>
+        <title>Shop - {segment}</title>
+      </Helmet>
       <div className={styles.breadcrumb}>
         <Link to={"/"}>Home <MdArrowForwardIos /></Link>
         <span>{segment}</span>
